@@ -11,7 +11,7 @@ tz_london = tz.gettz('Europe/London')
 
 sadasnji_trenutak_tokyo = sadasnji_trenutak.astimezone(tz_tokyo)
 sadasnji_trenutak_ny = sadasnji_trenutak.astimezone(tz_ny)
-sadasnji_trenutak_la = sadasnji_trenutak.astimezone(tz_la)
+sadasnji_trenutak_la = sadasnji_trenutak.astimezone(tz.gettz('America/Los_Angeles'))
 sadasnji_trenutak_london = sadasnji_trenutak.astimezone(tz_london)
 print('Tokyo', sadasnji_trenutak_tokyo.strftime('%A, %d.%m.%Y. %H:%M'))
 print('New York', sadasnji_trenutak_ny.strftime('%A, %d.%m.%Y. %H:%M'))
